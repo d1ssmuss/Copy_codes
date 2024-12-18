@@ -150,8 +150,8 @@ def show_registration_window():
     error_message = ""
     running = True
 
-    login_rect = pygame.Rect(420, 320, 200, 30)
-    password_rect = pygame.Rect(450, 380, 200, 30)
+    login_rect = pygame.Rect(420, 320, 200, 30)  # область логина
+    password_rect = pygame.Rect(450, 380, 200, 30) # область пароля
 
     while running:
         for event in pygame.event.get():
@@ -193,8 +193,8 @@ def show_registration_window():
 
         screen.blit(login_text, (320, 320))
         screen.blit(password_text, (320, 380))
-        screen.blit(login_input_text, (420, 320))
-        screen.blit(password_input_text, (450, 380))
+        screen.blit(login_input_text, (425, 320))
+        screen.blit(password_input_text, (455, 380))
         screen.blit(error_text, (320, 440))
 
         if input_active == "login":
